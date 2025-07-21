@@ -12,7 +12,7 @@ body{
 h1{
     color:#0D13B9;
     font-family:'Caveat', cursive;
-    font-size:25px;
+    font-size:30px;
     text-align:center;
     letter-spacing:4px;
     text-transform:capitalize;
@@ -148,13 +148,14 @@ hr{
 
 .title-bar {
   grid-area: title;
-  background-color: #EFBEF1;
+  background-color: #621566;
   padding: 1rem;
   text-align: center;
   border-radius: 8px;
   border: 2px solid #06094a;
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
+
 
 .sidebar {
   grid-area: sidebar;
@@ -172,25 +173,37 @@ hr{
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
 .sidebar section,
-.content section {
-  background-color: #fff0f0;
+.content section, .title-box section {
   border: 2px solid #06094a;
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
+.title-box {
+  background-color: #EFBEF1;
+  padding:30px;
+}
 .rate {
-  background-color: #A424A8;
+  background-color: #EFBEF1;
   
 }
+.home {
+  background-color:#EFBEF1 ;
+  font-family:'Caveat', cursive;
+  font-size:30px;
+  text-align:center;
+  letter-spacing:4px;
+  text-transform:capitalize;
 
-.convert {
+}
+
+.conversion {
   background-color: #EFBEF1;
 }
 
 .ingredients {
-  background-color: #e6f7ff;
+  background-color: #C1C3FB;
 }
 
 .directions {
