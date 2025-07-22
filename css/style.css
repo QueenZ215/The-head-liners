@@ -1,0 +1,93 @@
+
+body {
+  font-family: 'Comic Neue', cursive;
+  margin: 0;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #4a148c;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Layout container */
+.page-layout {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Header */
+.title-bar {
+  grid-area: header;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Main content grid */
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Recipe cards */
+.recipe {
+  background-color: #fce4ec;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ab47bc;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.recipe:hover {
+  transform: scale(1.02);
+}
+
+.recipe p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+figcaption {
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Footer */
+.page-footer {
+  grid-area: footer;
+  background-color: #6a1b9a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.page-footer a {
+  color: #ffd54f;
+}
