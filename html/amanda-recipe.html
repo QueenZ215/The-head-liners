@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Amanda Sokolowski">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Summer Sangria</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="CSS/amanda-style.css" type="text/css">
 </head>
 <body>
+  
+  <nav style="text-align: center; margin-top: 1em;">
+    <a href="index.html">← Back to Team Recipes</a>
+  </nav>
+
   <h1>Summer Sangria</h1>
   <h2>Easy Traditional Sangria</h2>
   <p>
@@ -17,8 +23,8 @@
   </p>
 
   <figure>
-    <img src="images/sangria.jpg" alt="Glass of red sangria" height="250">
-    <figcaption>Photo: Divya Thakur / CC BY‑SA 2.0</figcaption>
+    <img src="images/amanda-sangria.jpg" alt="Glass of red sangria" height="250">
+    <figcaption>Photo: Divya Thakur / CC BY‑SA 2.0</figcaption>
   </figure>
 
   <h3>Ingredients</h3>
@@ -42,9 +48,10 @@
 
   <h3>Conversion</h3>
   <form id="conversion-form">
-    <input type="text" id="tblspn" name="tblspn">
-    =
-    <input type="text" id="cups" name="cups">
+    <label for="tblspn">Tablespoons:</label>
+    <input type="number" id="tblspn" name="tblspn"> =
+    <label for="cups">Cups:</label>
+    <input type="number" id="cups" name="cups">
   </form>
 
   <h3 class="rate">Rate This Recipe</h3>
@@ -67,7 +74,13 @@
   </ol>
 
   <hr>
-  <p class="footer-note">This page created as academic activity only.</p>
+  <footer>
+    <p class="footer-note">
+      This page created as academic activity only.  
+      <a href="https://www.bellevuecollege.edu/" target="_blank" rel="noopener">
+        Bellevue College
+      </a>
+    </p>
+  </footer>
 </body>
 </html>
-
