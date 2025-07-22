@@ -204,11 +204,16 @@ hr{
 
 .ingredients {
   background-color: #C1C3FB;
+  transition: transform 0.2s ease;
 }
-
+.ingredients:hover, .directions:hover {
+  transform: scale(1.02);
+}
 .directions {
   background-color: #C1C3FB;
+  transition: transform 0.2s ease;
 }
+
 .page-footer{
     grid-area: footer;
     background-color: #A424A8;
