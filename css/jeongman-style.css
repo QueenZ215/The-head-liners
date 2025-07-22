@@ -1,95 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("../images/jeongman-pancake-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #111;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Jeongman Park">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfect Pancakes</title>
-  <link rel="stylesheet" href="../css/jeongman-style.css">
-</head>
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "photo rate-conversion"
+    "ingredients directions";
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
 
-<body>
-  <div class="grid-container">
+.header {
+  grid-area: header;
+  text-align: center;
+  color: #b45f06;
+}
 
-    <header class="header">
-      <h1>Perfect Pancakes</h1>
-      <h2>Fluffy Buttermilk Pancakes</h2>
-      <p>
-        Source:
-        <a href="https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/" target="_blank">allrecipes</a>
-      </p>
+.photo {
+  grid-area: photo;
+}
 
-      <nav style="text-align: center; margin-top: 10px;">
-        <a href="../index.html">← Back to Team Recipes</a>
-      </nav>
-    </header>
+.ingredients {
+  grid-area: ingredients;
+}
 
-    <section class="photo">
-      <h3>Pancakes (Good Old-Fashioned)</h3>
-      <figure>
-        <img src="../images/jeongman-pancakes.jpg" alt="Fluffy pancakes" height="250">
-        <figcaption>Photo by: Dotdash Meredith Food Studios (allrecipeshome)</figcaption>
-      </figure>
-    </section>
+.rate-conversion {
+  grid-area: rate-conversion;
+}
 
-    <section class="ingredients">
-      <h3>Ingredients</h3>
-      <ul>
-        <li>1 1/2 cups all-purpose flour</li>
-        <li>3 1/2 teaspoons baking powder</li>
-        <li>1 teaspoon salt</li>
-        <li>1 tablespoon white sugar</li>
-        <li>1 1/4 cups milk</li>
-        <li>1 egg</li>
-        <li>3 tablespoons butter, melted</li>
-      </ul>
-    </section>
+.directions {
+  grid-area: directions;
+}
 
-    <section class="rate-conversion">
-      <h3 class="rate">Rate This Recipe</h3>
-      <fieldset>
-        <legend>How difficult is this recipe?</legend>
-        <input type="radio" id="easy" name="difficulty" value="easy"> Easy
-        <input type="radio" id="intermediate" name="difficulty" value="intermediate"> Intermediate
-        <input type="radio" id="hard" name="difficulty" value="hard"> Hard
-      </fieldset>
+img {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
 
-      <h3>Conversion</h3>
-      <input type="text" id="tspn" name="tspn" placeholder="Teaspoons">
-      =
-      <input type="text" id="tblspn" name="tblspn" placeholder="Tablespoons">
-    </section>
+figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
 
-    <section class="directions">
-      <h3>Directions</h3>
-      <ol>
-        <li>In a large bowl, sift together flour, baking powder, salt, and sugar.</li>
-        <li>Make a well in the center and pour in milk, egg, and melted butter. Mix until smooth.</li>
-        <li>Heat a lightly oiled griddle or frying pan over medium-high heat.</li>
-        <li>Pour or scoop the batter onto the griddle using about 1/4 cup per pancake.</li>
-        <li>Brown on both sides and serve hot.</li>
-      </ol>
-    </section>
+fieldset {
+  width: 260px;
+  margin-bottom: 25px;
+}
 
-    <!--
-    <section class="equipment">
-      <h3>Equipment</h3>
-      <ul>
-        <li>Large mixing bowl</li>
-        <li>Measuring cups and spoons</li>
-        <li>Whisk or fork</li>
-        <li>Frying pan or griddle</li>
-        <li>Spatula</li>
-      </ul>
-    </section>
-    -->
+.rate-conversion h3+fieldset {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
 
-  </div>
+.rate-conversion h3 {
+  margin-bottom: 8px;
+}
 
-  <footer class="footer">
-    <p><strong>This page created as academic activity only.</strong></p>
-  </footer>
-</body>
+.rate-conversion input[type="text"] {
+  width: 80px;
+  padding: 5px;
+  margin: 0 5px 15px 0;
+  box-sizing: border-box;
+}
 
-</html>
+.ingredients ul,
+.directions ol {
+  margin-left: 20px;
+}
+
+.back-link {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #004d00;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #333;
+  font-size: 0.9em;
+}
